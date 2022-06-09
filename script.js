@@ -44,7 +44,7 @@ function update(){
         progBar.style.width = size + "px";
     }else{
         current.innerHTML = '0:00';
-        btn.innerHTML = '<i class="fas fa-play-circle" style="font-size: 30px"></i>';
+        btnAudio.innerHTML = '<i class="fas fa-play-circle" style="font-size: 30px"></i>';
 
         progBar.style.width = "0px";
         window.clearInterval(updateTime);
@@ -54,10 +54,10 @@ function update(){
 function playPause(){
     if(video.paused){
         video.play();
-        btn.innerHTML = '<i class="fa fa-pause-circle fa-7x"></i>';
+        btn.innerHTML = '<i class="fa fa-pause-circle"></i>';
     }else{
         video.pause();
-        btn.innerHTML = '<i class="fa fa-play-circle fa-7x"></i>';
+        btn.innerHTML = '<i class="fa fa-play-circle"></i>';
     }
 }
 
